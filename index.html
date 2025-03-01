@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Library</title>
+</head>
+<body>
+    <h1>LIBRARY FOR:NERDS</h1>
+    <button id="addBookBtn">ADD BOOK</button>
+    <div id="bookFormPopUp" class="pop-up">
+        <span class="close" id = "close_in">&times;</span>
+        <form id="bookForm">
+          <input type="text" id="title" placeholder="Book Title" required>
+          <input type="text" id="author" placeholder="Author" required>
+          <input type="text" id="genre" placeholder="Genre">
+          <input type="number" id="pages" placeholder="Page Count">
+          <div>
+            <label>Have you read it?</label>
+            <input type="checkbox" id="read">
+          </div>
+          <button type="submit" id ="submitBt" >Add Book</button>
+        </form>
+    </div>
+    <div class="libraryDisplay" id="libraryDisplay">
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
